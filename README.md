@@ -3,7 +3,9 @@
 - 参考了这个页面：<https://github.com/TLmaK0/gravizo>
 - 使用了[graphviz](http://www.graphviz.org/)中的[DOT](http://www.graphviz.org/content/dot-language)语言，[在线试验页面](https://mdaines.github.io/viz.js/)
 - 主要使用了这个服务：<http://www.gravizo.com/>，[在线转换页面](http://www.gravizo.com/#converter)
- 
+
+先看下面这个图片：
+
 ![my-graph](http://g.gravizo.com/g?
 digraph G {
   node [shape=box]
@@ -23,6 +25,8 @@ digraph G {
   -> "做 retro 进行活动总结"
   -> "对 retro 之后的建议进行书面总结"
 })
+
+它实际上是在这个README里嵌入了以下代码：
 
 ```
 ![my-graph](http://g.gravizo.com/g?
@@ -45,3 +49,8 @@ digraph G {
   -> "对 retro 之后的建议进行书面总结"
 })
 ```
+
+由于使用文本来表达图形，所以让我们可以把它放到版本控制工具中，并可以更好的Review和修改。当然，这需要我们学习和掌握DOT及相关的语言。
+
+看一下这里的例子<http://www.gravizo.com/#samples>，原来我们可以用各种各样的代码语言来描述出这么复杂的图形，一旦掌握，可比画出来的要容易得多。
+
